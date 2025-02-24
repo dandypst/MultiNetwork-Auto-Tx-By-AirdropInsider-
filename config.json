@@ -24,6 +24,13 @@
             "rpc": "https://nexus.rpc.caldera.xyz/",
             "symbol": "NEX",
             "explorer": "https://nexus.explorer.caldera.xyz"
+        },
+        "0g-Newton": {
+            "name": "0g-Newton-Testnet",
+            "chainId": 16600,
+            "rpc": "https://evmrpc-testnet.0g.ai",
+            "symbol": "A0GI",
+            "explorer": "https://chainscan-newton.0g.ai"
         }
     }
 }
