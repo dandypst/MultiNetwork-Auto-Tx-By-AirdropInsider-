@@ -12,6 +12,7 @@ const WALLET_FILE = 'wallets.txt';
 const PK_FILE = 'pk.txt';
 const PROXY_FILE = 'proxies.txt';
 const FAUCET_API = networks.somnia.faucetApi;
+const FAUCET_API = networks.Humanity.faucetApi;
 
 const rl = readline.createInterface({
     input: process.stdin,
