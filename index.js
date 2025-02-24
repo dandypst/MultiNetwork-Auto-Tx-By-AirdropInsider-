@@ -213,6 +213,7 @@ async function handleFaucetClaims() {
             if (result.success) {
                 console.log(`Claim successful! TX Hash: ${result.hash}`);
                 console.log(`Amount: ${ethers.formatEther(result.amount)} ${networks.somnia.symbol}`);
+                console.log(`Amount: ${ethers.formatEther(result.amount)} ${networks.Humanity.symbol}`);
             } else {
                 console.log(`Claim failed: ${result.error}`);
             }
@@ -517,7 +518,8 @@ async function handleNetworkOperations(network) {
             console.log('1. Transfer Tokens');
         } else if (network === '0g-Newton') {
             console.log('1. Transfer Tokens');
-        }
+        } else if (network === 'Humanity') {
+            console.log('1. Claim Faucet');
         console.log('0. Back to Network Selection');
 
         const choice = await askQuestion('\nSelect operation: ');
@@ -575,20 +577,33 @@ async function handleNetworkOperations(network) {
                     default:
                         console.log('Invalid choice!');
                 }
+                break;
+            case 'somnia':
+                switch (choice) {
+                    case '1':
+                        await handleFaucetClaims();
+                        break;
+                    case '0':
+                        return;
+                    default:
+                        console.log('Invalid choice!');
+                }
+                break;
         }
     }
 }
 
 async function showMenu() {
     while (true) {
-        console.log('\n=== MULTI-NETWORK CRYPTO BOT | AIRDROP INSIDERS ===');
+        console.log('\n=== MULTI-NETWORK CRYPTO BOT | PIJE ===');
         console.log('1. Somnia Network');
         console.log('2. Monad Network');
         console.log('3. Nexus Network');
         console.log('4. 0g-Newton Network');
-        console.log('5. Exit');
+        console.log('5. Humanity Protocol');
+        console.log('6. Exit');
         
-        const choice = await askQuestion('\nSelect network (1-5): ');
+        const choice = await askQuestion('\nSelect network (1-6): ');
         
         switch (choice) {
             case '1':
@@ -604,6 +619,9 @@ async function showMenu() {
                 await handleNetworkOperations('0g-Newton');
                 break;
             case '5':
+                await handleNetworkOperations('Humanity');
+                break;
+            case '6':
                 console.log('Thank you for using this bot!');
                 rl.close();
                 process.exit(0);
