@@ -25,6 +25,12 @@ Automated wallet creation, faucet claiming, and token transfer bot for Somnia an
    - Symbol: NEX
    - Explorer: https://explorer.nexus.xyz
 
+ 3. 0g Newton Testnet
+   - RPC: https://evmrpc-testnet.0g.ai
+   - Chain ID: 16600
+   - symbol: A0GI
+   - Explorer: https://chainscan-newton.0g.ai
+
 ## Installation
 
 1. Clone the repository:
@@ -54,6 +60,7 @@ node index.js
    - Generate Wallets & Claim Faucet (Somnia)
    - Transfer STT Tokens (Somnia)
    - Transfer NEX Tokens (Nexus)
+   - Transfer A0GI Tokens (0g)
 
 3. Follow the prompts to:
    - Specify number of wallets to generate
