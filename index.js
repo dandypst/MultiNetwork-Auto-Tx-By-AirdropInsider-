@@ -564,10 +564,11 @@ async function handleNetworkOperations(network) {
                         console.log('Invalid choice!');
                 }
                 break;
+                
             case '0g-Newton':
                 switch (choice) {
                     case '1':
-                        await handleTokenTransfers('0g_newton');
+                        await handleTokenTransfers('0g-Newton');
                         break;
                     case '0':
                         return;
