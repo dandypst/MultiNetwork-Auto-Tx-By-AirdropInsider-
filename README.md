@@ -35,8 +35,8 @@ Automated wallet creation, faucet claiming, and token transfer bot for Somnia an
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/airdropinsiders/MultiNetwork-Auto-Tx.git
-cd MultiNetwork-Auto-Tx
+git clone https://github.com/dandypst/MutiNetwork-AutoTX-Bot.git
+cd MutiNetwork-AutoTX-Bot
 ```
 
 2. Install dependencies:
