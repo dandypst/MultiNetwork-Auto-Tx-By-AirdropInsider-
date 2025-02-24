@@ -24,8 +24,8 @@ Automated wallet creation, faucet claiming, and token transfer bot for Somnia an
    - Chain ID: 393
    - Symbol: NEX
    - Explorer: https://explorer.nexus.xyz
-
- 3. 0g Newton Testnet
+     
+3. 0g-Newton Testnet
    - RPC: https://evmrpc-testnet.0g.ai
    - Chain ID: 16600
    - symbol: A0GI
