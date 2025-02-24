@@ -31,6 +31,14 @@
             "rpc": "https://evmrpc-testnet.0g.ai",
             "symbol": "A0GI",
             "explorer": "https://chainscan-newton.0g.ai"
+        },
+        "Humanity": {
+            "name": "Humanity",
+            "chainId": 1942999413,
+            "rpc": "https://rpc.testnet.humanity.org",
+            "symbol": "tHP",
+            "explorer": "https://explorer.testnet.humanity.org",
+            "faucetApi": "https://faucet.testnet.humanity.org/api/claim"
         }
     }
 }
